@@ -1,3 +1,4 @@
+
 coreo_aws_ec2_securityGroups "${NAT_SG_NAME}" do
   action :sustain
   description "NAT security group"
@@ -30,6 +31,6 @@ coreo_aws_ec2_autoscaling "${NAT_NAME}" do
   scheme "one_running"
   minimum 1
   maximum 1
-  server_definition "${SERVER_NAME}"
+  server_definition "${NAT_NAME}"
   subnet "${PUBLIC_SUBNET_NAME}"
 end

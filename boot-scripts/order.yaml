@@ -1,0 +1,3 @@
+script-order:
+  - disable_source_destination_checks.sh
+  - find_and_attach_eni.sh

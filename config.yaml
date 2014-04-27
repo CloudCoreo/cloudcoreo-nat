@@ -1,24 +1,11 @@
-cloudcoreo-nat
-==============
-
-NAT instance configuration
-
-This repo is designed to work with the CloudCoreo engine. Adding this repository as a submodule will ensure a High-uptime NAT is configued to work even in the event of a loss of availability zone.
-
-OVERRIDE REQUIRED VARIABLES
-    VPC_NAME:
-        required: true
-        description: this is the name of your vpc as defined by your CloudCoreo setup
-    PUBLIC_SUBNET_NAME:
-        required: true
-        description: this is the name of the public subnet group as defined by your CloudCoreo setup
-
-OVERRIDE OPTIONAL VARIABLES
 variables:
     NAT_SG_NAME:
         required: true
         description: the name of the security group to create for the NAT
         default: "NAT-sg"
+    VPC_NAME:
+        required: true
+        description: the name of the VPC
     NAT_INGRESS_PORTS:
         required: true
         description: allowed ingress ports on the nat
@@ -52,3 +39,6 @@ variables:
         required: true
         description: the instance size of the nat
         default: "m1.small"
+    PUBLIC_SUBNET_NAME:
+        required: true
+        description: the cloudcoreo name of the public vpc subnets
