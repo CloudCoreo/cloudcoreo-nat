@@ -6,12 +6,12 @@ NAT instance configuration
 This repo is designed to work with the [CloudCoreo](http://www.cloudcoreo.com) engine. Adding this repository as a submodule will ensure a High-uptime NAT is configued to work even in the event of a loss of availability zone.
 
 OVERRIDE REQUIRED VARIABLES
-    VPC_NAME:
-        required: true
-        description: this is the name of your vpc as defined by your [CloudCoreo](http://www.cloudcoreo.com) setup
-    PUBLIC_SUBNET_NAME:
-        required: true
-        description: this is the name of the public subnet group as defined by your [CloudCoreo](http://www.cloudcoreo.com) setup
+    * VPC_NAME:
+        ..* required: true
+        ..* description: this is the name of your vpc as defined by your [CloudCoreo](http://www.cloudcoreo.com) setup
+    * PUBLIC_SUBNET_NAME:
+        ..* required: true
+        ..* description: this is the name of the public subnet group as defined by your [CloudCoreo](http://www.cloudcoreo.com) setup
 
 OVERRIDE OPTIONAL VARIABLES
 variables:
