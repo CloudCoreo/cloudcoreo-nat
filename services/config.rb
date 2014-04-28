@@ -7,14 +7,14 @@ coreo_aws_ec2_securityGroups "${NAT_SG_NAME}" do
           { 
             :direction => :ingress,
             :protocol => :tcp,
-            :ports => "${NAT_INGRESS_PORTS}",
-            :cidrs => "${NAT_INGRESS_CIDRS}",
+            :ports => ${NAT_INGRESS_PORTS},
+            :cidrs => ${NAT_INGRESS_CIDRS},
           },
           { 
             :direction => :egress,
             :protocol => :tcp,
-            :ports => "${NAT_EGRESS_PORTS}",
-            :cidrs => "${NAT_EGRESS_CIDRS}",
+            :ports => ${NAT_EGRESS_PORTS},
+            :cidrs => ${NAT_EGRESS_CIDRS},
           }
     ]
 end
