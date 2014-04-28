@@ -15,7 +15,7 @@ variables:
     NAT_INGRESS_CIDRS:
         required: true
         description: allowed ingress network cidrs on the nat
-	default :
+        default :
             - "0.0.0.0/0"
     NAT_EGRESS_PORTS:
         required: true
@@ -25,7 +25,7 @@ variables:
     NAT_INGRESS_CIDRS:
         required: true
         description: allowed ingress network cidrs on the nat
-	default :
+        default :
             - "0.0.0.0/0"
     NAT_NAME:
         required: true
