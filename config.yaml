@@ -22,7 +22,7 @@ variables:
         description: allowed ingress ports on the nat
         default:
             - "0-65535"
-    NAT_INGRESS_CIDRS:
+    NAT_EGRESS_CIDRS:
         required: true
         description: allowed ingress network cidrs on the nat
         default :
