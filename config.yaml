@@ -42,3 +42,14 @@ variables:
     PUBLIC_SUBNET_NAME:
         required: true
         description: the cloudcoreo name of the public vpc subnets
+    MONITORINTERVAL:
+        required: true
+        description: time in seconds between route checks
+        default: 20
+    LOGFILE:
+        required: false
+        description: ha-nat log file
+        default: "/var/log/ha-nat.log"
+    PRIVATE_SUBNETS:
+        required: true
+        descripiton: comma seperated list of the private subnet ids
