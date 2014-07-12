@@ -6,6 +6,7 @@ variables:
     VPC_NAME:
         required: true
         description: the name of the VPC
+        default: "test-vpc"
     NAT_INGRESS_PORTS:
         required: true
         description: allowed ingress ports on the nat
