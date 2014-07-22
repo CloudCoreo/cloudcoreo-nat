@@ -13,25 +13,25 @@ variables:
         default:
             - "80"
             - "443"
-	type: array
+        type: array
     NAT_INGRESS_CIDRS:
         required: true
         description: allowed ingress network cidrs on the nat
         default :
             - "0.0.0.0/0"
-	type: array
+        type: array
     NAT_EGRESS_PORTS:
         required: true
         description: allowed ingress ports on the nat
         default:
             - "0..65535"
-	type: array
+        type: array
     NAT_EGRESS_CIDRS:
         required: true
         description: allowed ingress network cidrs on the nat
         default :
             - "0.0.0.0/0"
-	type: array
+        type: array
     NAT_NAME:
         required: true
         description: the name of the nat instance
@@ -47,12 +47,11 @@ variables:
     PUBLIC_SUBNET_NAME:
         required: true
         description: the cloudcoreo name of the public vpc subnets
-	type: boolean
     MONITORINTERVAL:
         required: true
         description: time in seconds between route checks
         default: 20
-	type: number
+        type: number
     LOGFILE:
         required: false
         description: ha-nat log file
@@ -60,4 +59,4 @@ variables:
     PRIVATE_SUBNETS:
         required: true
         descripiton: comma seperated list of the private subnet ids
-	type: array
+        type: array
