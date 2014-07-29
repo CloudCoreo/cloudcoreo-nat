@@ -59,4 +59,3 @@ variables:
     PRIVATE_SUBNETS:
         required: true
         descripiton: comma seperated list of the private subnet ids
-        type: array
