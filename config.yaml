@@ -43,7 +43,7 @@ variables:
     NAT_SIZE:
         required: true
         description: the instance size of the nat
-        default: "m1.small"
+        default: "m2.small"
     PUBLIC_SUBNET_NAME:
         required: true
         description: the cloudcoreo name of the public vpc subnets
