@@ -20,7 +20,7 @@ coreo_aws_ec2_securityGroups "${NAT_SG_NAME}" do
 end
 
 coreo_aws_iam_policy "${NAT_NAME}" do
-  action :create
+  action :sustain
   policy_name "AllowVpcManagement"
   policy_document <<-EOH
 {
