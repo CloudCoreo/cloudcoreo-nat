@@ -57,27 +57,6 @@ end
 
 coreo_aws_iam_instance_profile "${NAT_NAME}" do
   action :sustain
-  trust_document <<-EOH
-{
-    "Version":"2008-10-17",
-    "Statement":
-    [
-        {
-            "Effect":"Allow",
-            "Principal":{
-                "Service":
-                [
-                    "ec2.amazonaws.com"
-                ]
-            },
-            "Action":
-            [
-                "sts:AssumeRole"
-            ]
-        }
-    ]
-}
-EOH
   policies ["${NAT_NAME}"]
 end
 
