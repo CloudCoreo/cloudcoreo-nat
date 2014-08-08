@@ -55,7 +55,7 @@ coreo_aws_iam_policy "${NAT_NAME}" do
 EOH
 end
 
-coreo_aws_iam_role "${NAT_NAME}" do
+coreo_aws_iam_instance_profile "${NAT_NAME}" do
   action :sustain
   trust_document <<-EOH
 {
