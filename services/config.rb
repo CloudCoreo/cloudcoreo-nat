@@ -56,7 +56,7 @@ EOH
 end
 
 coreo_aws_iam_role "${NAT_NAME}" do
-  action :create
+  action :sustain
   trust_document <<-EOH
 {
     "Version":"2008-10-17",
