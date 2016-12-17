@@ -36,6 +36,10 @@ variables:
         required: true
         description: the name of the nat instance
         default: "NAT"
+    NAT_AMI:
+        required: true
+        description: the ami id of the nat
+        default: "ami-ad227cc4"
     NAT_SIZE:
         required: true
         description: the instance size of the nat
