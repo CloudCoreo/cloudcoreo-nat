@@ -62,7 +62,7 @@ end
 
 coreo_aws_ec2_instance "${NAT_NAME}" do
   action :define
-  image_id "${NAT_AMI}"
+  image_id "${AWS_LINUX_AMI}"
   size "${NAT_SIZE}"
   security_groups ["${NAT_SG_NAME}"]
   associate_public_ip true
