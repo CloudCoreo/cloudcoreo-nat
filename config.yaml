@@ -1,4 +1,16 @@
 variables:
+    AUTOSCALING_GROUP_MAXIMUM:
+        default: 1
+        description: Maximum number of instances the autoscale group will launch
+        overrides:
+        required: true
+        type: number
+    AUTOSCALING_GROUP_MINIMUM:
+        default: 1
+        description: Minimum number of instances the autoscale group will launch
+        overrides:
+        required: true
+        type: number
     NAT_SG_NAME:
         required: true
         description: the name of the security group to create for the NAT
