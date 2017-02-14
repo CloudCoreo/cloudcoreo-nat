@@ -72,8 +72,8 @@ end
 coreo_aws_ec2_autoscaling "${NAT_NAME}" do
   action :sustain 
   scheme "one_running"
-  minimum 1
-  maximum 1
+  minimum "${AUTOSCALING_GROUP_MAXIMUM}"
+  maximum "${AUTOSCALING_GROUP_MINIMUM}"
   server_definition "${NAT_NAME}"
   subnet "${PUBLIC_SUBNET_NAME}"
 end
